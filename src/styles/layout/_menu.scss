@@ -1,0 +1,20 @@
+/**
+ * Site menu
+ *
+ *
+ *
+ *
+ */
+.Site-menu {
+    @extend %list-style-type-none;
+
+    font-size: 14px;
+    line-height: 40px;
+
+    li {
+        @extend .d-flex, .justify-content-between;
+        @include margin( bottom -1px );
+
+        border-bottom: 1px solid the_color( black );
+    }
+}

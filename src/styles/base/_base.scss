@@ -1,0 +1,47 @@
+/**
+ * Base
+ */
+:root {}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	@extend %font-weight-regular, %font-family-body, %position-relative;
+
+	font-size: 16px;
+	line-height: 26px;
+
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+
+	text-rendering: optimizeLegibility;
+
+	@include media-breakpoint-up( md ) {
+		font-size: $base-font-size-px;
+		line-height: #{ $base-line-height }px;
+	}
+}
+
+a,
+button {
+	cursor: pointer;
+	outline: none;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+p {
+	@include margin (
+		top 0
+		bottom $grid-gutter-width
+	);
+}
+
+strong {
+	@extend %font-weight-bold;
+}
