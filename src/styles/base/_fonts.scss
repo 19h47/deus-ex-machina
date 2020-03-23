@@ -4,9 +4,27 @@
     src: url('../fonts/aeonik/aeonik-regular.eot');
     src: url('../fonts/aeonik/aeonik-regular.woff2') format('woff2'),
         url('../fonts/aeonik/aeonik-regular.woff') format('woff'),
-		url('../fonts/aeonik/aeonik-regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/aeonik/aeonik-regular.ttf') format('truetype');
+        url('../fonts/aeonik/aeonik-regular.eot?#iefix')
+            format('embedded-opentype'),
+        url('../fonts/aeonik/aeonik-regular.ttf') format('truetype');
     font-weight: 400;
-	font-style: normal;
-	font-display: swap;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Regular
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('../fonts/freight-big-pro/freight-big-pro-medium.eot');
+    src: url('../fonts/freight-big-pro/freight-big-pro-medium.woff2')
+            format('woff2'),
+        url('../fonts/freight-big-pro/freight-big-pro-medium.woff')
+            format('woff'),
+        url('../fonts/freight-big-pro/freight-big-pro-medium.eot?#iefix')
+            format('embedded-opentype'),
+        url('../fonts/freight-big-pro/freight-big-pro-medium.ttf')
+            format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }

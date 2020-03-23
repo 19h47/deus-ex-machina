@@ -6,19 +6,19 @@
 
 module.exports = {
     siteMetadata: {
-        title: 'DeusExMachina',
-        titleTemplate: '%s · The Real Hero',
-        description: 'DeusExMachina',
+        title: 'Deus Ex Machina',
+        titleTemplate: '%s · God from the machine',
+        description: 'Deus Ex Machina, god from the machine',
         url: 'https://www.deusexmachina.19h47.fr',
         image: '/jpg/open-graph-image.jpg',
-        twitterUsername: '@occlumency',
+        twitterUsername: '@19h47',
     },
     plugins: [
         `gatsby-plugin-sass`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `DeusExMachina`,
+                name: `Deus Ex Machina`,
                 short_name: `Deus`,
                 start_url: `/`,
                 background_color: `#d54e1a`,

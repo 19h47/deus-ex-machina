@@ -1,47 +1,49 @@
 /**
  * Base
  */
-:root {}
+:root {
+}
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    background-color: the_color(orange, strong);
 }
 
 body {
-	@extend %font-weight-regular, %font-family-body, %position-relative;
+    @extend %font-weight-regular,
+        %font-family-body,
+        %position-relative,
+        %overflow-x-hidden;
 
-	font-size: 16px;
-	line-height: 26px;
+    font-size: 16px;
+    line-height: 26px;
 
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 
-	text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
 
-	@include media-breakpoint-up( md ) {
-		font-size: $base-font-size-px;
-		line-height: #{ $base-line-height }px;
-	}
+    @include media-breakpoint-up(md) {
+        font-size: $base-font-size-px;
+        line-height: #{$base-line-height}px;
+    }
 }
 
 a,
 button {
-	cursor: pointer;
-	outline: none;
+    cursor: pointer;
+    outline: none;
 }
 
 a {
-	color: currentColor;
-	text-decoration: none;
+    color: currentColor;
+    text-decoration: none;
 }
 
 p {
-	@include margin (
-		top 0
-		bottom $grid-gutter-width
-	);
+    @include margin(top 0 bottom $grid-gutter-width);
 }
 
 strong {
-	@extend %font-weight-bold;
+    @extend %font-weight-bold;
 }

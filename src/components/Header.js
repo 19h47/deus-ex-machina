@@ -3,7 +3,7 @@ import React from 'react';
 import Logo from './Logo';
 import Menu from './Menu';
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
     <header className="Site-header">
         <div className="Site-container">
             <div className="row">
@@ -14,6 +14,14 @@ const Header = ({ siteTitle }) => (
                     <Menu />
                 </div>
             </div>
+            <h1 className="Heading">
+                <i>D</i>eus
+                <br />
+                ex
+                <br />m<i>a</i>ch
+                <br />
+                –i<i>n</i>a
+            </h1>
         </div>
     </header>
 );

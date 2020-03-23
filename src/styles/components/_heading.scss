@@ -1,0 +1,12 @@
+.Heading {
+    @include absolute(top 0 right 0);
+    @include margin(top get_viewport_width(-48) right get_viewport_width(-142));
+    @extend %font-family-title,
+        %text-transform-uppercase,
+        %font-weight-medium,
+        %text-align-right;
+    font-size: get_viewport_width(380);
+    line-height: get_viewport_width(290);
+
+    z-index: 1;
+}
