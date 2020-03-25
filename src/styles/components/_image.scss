@@ -4,6 +4,27 @@
  *
  */
 .Image {
-    max-width: 100%;
-    height: auto;
+    @extend %position-relative;
+
+    img {
+        @extend .d-inline-block;
+        @extend %vertical-align-middle;
+
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__caption {
+        @include absolute(top get_viewport_width(155) right 0 bottom 0 left 0);
+        @extend %font-weight-medium, %text-transform-uppercase;
+
+        color: the_color(white);
+        font-size: get_viewport_width(100);
+        line-height: get_viewport_width(90);
+
+        span {
+            @extend .d-block;
+            @extend %text-align-right;
+        }
+    }
 }

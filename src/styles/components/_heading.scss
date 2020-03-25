@@ -1,12 +1,35 @@
 .Heading {
-    @include absolute(top 0 right 0);
-    @include margin(top get_viewport_width(-48) right get_viewport_width(-142));
-    @extend %font-family-title,
-        %text-transform-uppercase,
-        %font-weight-medium,
-        %text-align-right;
-    font-size: get_viewport_width(380);
-    line-height: get_viewport_width(290);
+    $this: &;
+
+    @include absolute(top 0);
+    @extend %font-family-title, %text-transform-uppercase, %font-weight-medium;
 
     z-index: 1;
+
+    &--right {
+        @extend %text-align-right;
+        @include margin(
+            top get_viewport_width(-48) right get_viewport_width(-65)
+        );
+
+        right: 0;
+    }
+
+    &--left {
+        @extend %text-align-left;
+        @include margin(left get_viewport_width(-65));
+
+        left: 0;
+    }
+
+    div {
+        @extend %overflow-hidden;
+    }
+
+    span {
+        @extend .d-block;
+
+        font-size: get_viewport_width(380);
+        line-height: get_viewport_width(290);
+    }
 }

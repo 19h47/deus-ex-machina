@@ -2,6 +2,14 @@ import React from 'react';
 
 import Logo from './Logo';
 import Menu from './Menu';
+import Heading from './Heading';
+
+const label = [
+    '<div><span><i>D</i>eus</span></div>',
+    '<div><span>ex</span></div>',
+    '<div><span>m<i>a</i>ch</span></div>',
+    '<div><span>–i<i>n</i>a</span></div>',
+];
 
 const Header = () => (
     <header className="Site-header">
@@ -14,14 +22,7 @@ const Header = () => (
                     <Menu />
                 </div>
             </div>
-            <h1 className="Heading">
-                <i>D</i>eus
-                <br />
-                ex
-                <br />m<i>a</i>ch
-                <br />
-                –i<i>n</i>a
-            </h1>
+            <Heading label={label} direction={'right'} />
         </div>
     </header>
 );

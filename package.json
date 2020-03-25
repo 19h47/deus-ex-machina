@@ -1,5 +1,5 @@
 {
-  "name": "19h47/deus-ex-machina",
+  "name": "@19h47/deus-ex-machina",
   "private": true,
   "description": "Deus Ex Machina",
   "version": "0.0.0",
@@ -14,15 +14,18 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "architecture": "github:19h47/architecture",
+    "architecture": "19h47/architecture",
     "bootstrap": "^4.4.1",
     "gatsby": "^2.19.45",
+    "gatsby-cli": "^2.11.1",
     "gatsby-plugin-manifest": "^2.3.1",
     "gatsby-plugin-sass": "^2.2.0",
+    "gsap": "^3.2.6",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "react-use": "^13.27.0",
     "ress": "^2.0.4"
   },
   "devDependencies": {
